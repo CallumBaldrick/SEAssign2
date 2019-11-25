@@ -11,7 +11,6 @@ public class Student {
 	LocalDate DOB;
 	long ID;
 	String username;
-//	String modules[];
 	ArrayList<String> modules = new ArrayList<String>();
 	
 
@@ -59,7 +58,7 @@ public class Student {
 	{return name;}
 	
 	public void setName(String name)
-	{name=name;}
+	{this.name=name;}
 	
 	public int getAge()
 	{return age;}
