@@ -1,5 +1,7 @@
 package nuigalway.app.my_app;
 
+import org.joda.time.LocalDate;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -18,6 +20,7 @@ public class AppTest
     public AppTest( String testName )
     {
         super( testName );
+        Student student1 = new Student("Callum Baldrick",21, new LocalDate(1997, 12, 4),16451364,null,null);
     }
 
     /**
@@ -34,5 +37,12 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+        
+    }
+    
+    public void testGetUserName()
+    {
+    	String expectedUsername = "Callum Baldrick21";
+    	String resultusername=student1.getUsername();
     }
 }
